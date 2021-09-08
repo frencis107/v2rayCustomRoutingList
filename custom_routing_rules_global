@@ -11,7 +11,7 @@
 		]
 	},
 	{
-		"port": "0-65535",
+		"port": "80,443",
 		"outboundTag": "proxy"
 	}
 ]
