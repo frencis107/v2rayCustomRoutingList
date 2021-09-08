@@ -6,15 +6,8 @@
 	},
 	{
 		"outboundTag": "direct",
-		"domain": [
-			"geosite:cn"
-		]
-	},
-	{
-		"outboundTag": "direct",
 		"ip": [
 			"geoip:private",
-			"geoip:cn"
 		]
 	},
 	{
