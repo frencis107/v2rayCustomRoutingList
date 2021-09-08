@@ -46,18 +46,6 @@
     "inboundTag": [],
     "outboundTag": "proxy",
     "domain": [
-      "geosite:geolocation-!cn"
-    ],
-    "protocol": [
-      "http",
-      "tls"
-    ]
-  },
-  {
-    "port": "80,443",
-    "inboundTag": [],
-    "outboundTag": "proxy",
-    "domain": [
       "geosite:github"
     ],
     "protocol": [
