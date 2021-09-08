@@ -1,16 +1,16 @@
 [
   {
     "inboundTag": [],
-    "outboundTag": "direct",
-    "ip": [
-      "geoip:private"
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all"
     ]
   },
   {
     "inboundTag": [],
-    "outboundTag": "block",
-    "domain": [
-      "geosite:category-ads-all"
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private"
     ]
   },
   {
@@ -25,5 +25,13 @@
       "http",
       "tls"
     ]
+  },
+  {
+    "port": "0-65535",
+    "inboundTag": [],
+    "outboundTag": "direct",
+    "ip": [],
+    "domain": [],
+    "protocol": []
   }
 ]
