@@ -1,0 +1,85 @@
+[
+  {
+    "port": "80,443",
+    "inboundTag": [],
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all"
+    ],
+    "protocol": [
+      "http",
+      "tls"
+    ]
+  },
+  {
+    "inboundTag": [],
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:cn"
+    ],
+    "domain": [
+      "geosite:cn"
+    ]
+  },
+  {
+    "inboundTag": [],
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private"
+    ]
+  },
+  {
+    "port": "80,443",
+    "inboundTag": [],
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:gfw",
+      "geosite:greatfire"
+    ],
+    "protocol": [
+      "http",
+      "tls"
+    ]
+  },
+  {
+    "port": "80,443",
+    "inboundTag": [],
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:geolocation-!cn"
+    ],
+    "protocol": [
+      "http",
+      "tls"
+    ]
+  },
+  {
+    "port": "80,443",
+    "inboundTag": [],
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:github"
+    ],
+    "protocol": [
+      "http",
+      "tls"
+    ]
+  },
+  {
+    "inboundTag": [],
+    "outboundTag": "proxy",
+    "ip": [
+      "geoip:google",
+      "geoip:telegram"
+    ],
+    "domain": [
+      "geosite:google",
+      "geosite:telegram"
+    ]
+  },
+  {
+    "port": "0-65535",
+    "inboundTag": [],
+    "outboundTag": "direct"
+  }
+]
